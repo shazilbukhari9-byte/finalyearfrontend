@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -10,7 +10,7 @@
       // Apply the saved theme before first paint to avoid a flash of the wrong theme.
       try {
         var t = localStorage.getItem('theme');
-        if (t === 'light') document.documentElement.classList.remove('dark');
+        if (t === 'dark') document.documentElement.classList.add('dark');
       } catch (e) {}
     </script>
   </head>

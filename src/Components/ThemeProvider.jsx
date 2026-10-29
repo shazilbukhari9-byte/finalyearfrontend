@@ -6,9 +6,9 @@ const readStoredTheme = () => {
     const stored = localStorage.getItem(THEME_STORAGE_KEY);
     if (stored === 'light' || stored === 'dark') return stored;
   } catch {
-    // Storage can be blocked (private mode); fall back to the brand default.
+    // Storage can be blocked (private mode); fall back to the default theme.
   }
-  return 'dark';
+  return 'light';
 };
 
 const ThemeProvider = ({ children }) => {
